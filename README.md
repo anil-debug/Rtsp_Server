@@ -17,11 +17,13 @@ This script sets up an RTSP server using GStreamer in Python. It takes an RTSP s
     git clone https://github.com/your/repository.git
     ```
 
-2. Install dependencies:
+2. **Install GStreamer**: Ensure that GStreamer is installed on your system. Depending on your operating system, you can install GStreamer using the following commands:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+   - For Ubuntu/Debian:
+
+     ```bash
+     sudo apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
+     ```
 
 3. Run the script:
 
@@ -36,4 +38,3 @@ This script sets up an RTSP server using GStreamer in Python. It takes an RTSP s
 ## Script Explanation
 
 The script creates an RTSP server using GStreamer. It defines a custom `StreamFactory` class that extends `GstRtspServer.RTSPMediaFactory` to handle stream creation. The `StreamFactory` class creates a GStreamer pipeline to receive the RTSP stream, encode it, and then serve it via RTSP. The script also includes a `create_rtsp_server` function to set up the server with the specified parameters.
-
