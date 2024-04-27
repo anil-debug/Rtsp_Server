@@ -14,7 +14,7 @@ This script sets up an RTSP server using GStreamer in Python. It takes an RTSP s
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your/repository.git
+    git clone https://github.com/anil-debug/Rtsp_Server
     ```
 
 2. **Install GStreamer**: Ensure that GStreamer is installed on your system. Depending on your operating system, you can install GStreamer using the following commands:
